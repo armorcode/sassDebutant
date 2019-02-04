@@ -1,0 +1,65 @@
+$primary: #D9F5E8;
+$secondary: #37cbc2;
+$tertiary: #fb3;
+$fourth : #FF6347;
+
+$colors : primary $primary,
+secondary $secondary,
+tertiary $tertiary,
+fourth $fourth;
+
+$color-names : primary 'Rose bonbon',
+secondary 'green hh',
+tertiary 'blue turquoise',
+fourth 'yellow poussin';
+
+.goldadd {
+        height: 3rem;
+     
+    }
+@each $c in $colors {
+    $key: nth($c, 1);
+    $value: nth($c, 2);
+
+    .#{$key} .vignette {
+        background-color: $value;
+        height: 100px;
+    }
+
+    .#{$key} .label-rgb::after {
+        //content: '#{red($value)} / #{blue($value)} ';
+        content: '#{round(hue($value))} / #{round(saturation($value))} / #{round(lightness($value))}';
+
+    }
+
+    
+
+    .#{$key} .vignette1 {
+        background: lighten(saturate($value, 20), 10);
+    }
+
+    .#{$key} .mixed-with-primary {
+        background: mix($value, $primary, 65%);
+    }
+
+    .#{$key} .mixed-with-secondary {
+        background: mix($value, $secondary, 65%);
+    }
+
+    .#{$key} .mixed-with-tertiary {
+        background: mix($value, $tertiary, 65%);
+    }
+
+    .#{$key} .mixed-with-fourth  {
+        background: mix($value, $fourth, 65%);
+    }
+
+}
+
+@each $n in $color-names {
+    .#{nth($n , 1 )} .label::after {
+        content: nth($n, 2);
+    }
+
+
+}

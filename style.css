@@ -1,0 +1,136 @@
+.goldadd {
+  height: 3rem;
+}
+
+.primary .vignette {
+  background-color: #D9F5E8;
+  height: 100px;
+}
+
+.primary .label-rgb::after {
+  content: "152deg / 58% / 91%";
+}
+
+.primary .vignette1 {
+  background: white;
+}
+
+.primary .mixed-with-primary {
+  background: #d9f5e8;
+}
+
+.primary .mixed-with-secondary {
+  background: #a0e6db;
+}
+
+.primary .mixed-with-tertiary {
+  background: #e6e1a9;
+}
+
+.primary .mixed-with-fourth {
+  background: #e6c2b0;
+}
+
+.secondary .vignette {
+  background-color: #37cbc2;
+  height: 100px;
+}
+
+.secondary .label-rgb::after {
+  content: "176deg / 59% / 51%";
+}
+
+.secondary .vignette1 {
+  background: #4beae0;
+}
+
+.secondary .mixed-with-primary {
+  background: #70dacf;
+}
+
+.secondary .mixed-with-secondary {
+  background: #37cbc2;
+}
+
+.secondary .mixed-with-tertiary {
+  background: #7dc590;
+}
+
+.secondary .mixed-with-fourth {
+  background: #7da797;
+}
+
+.tertiary .vignette {
+  background-color: #fb3;
+  height: 100px;
+}
+
+.tertiary .label-rgb::after {
+  content: "40deg / 100% / 60%";
+}
+
+.tertiary .vignette1 {
+  background: #ffcc66;
+}
+
+.tertiary .mixed-with-primary {
+  background: #f2cf72;
+}
+
+.tertiary .mixed-with-secondary {
+  background: #b9c165;
+}
+
+.tertiary .mixed-with-tertiary {
+  background: #ffbb33;
+}
+
+.tertiary .mixed-with-fourth {
+  background: #ff9c3a;
+}
+
+.fourth .vignette {
+  background-color: #FF6347;
+  height: 100px;
+}
+
+.fourth .label-rgb::after {
+  content: "9deg / 100% / 64%";
+}
+
+.fourth .vignette1 {
+  background: #ff8e7a;
+}
+
+.fourth .mixed-with-primary {
+  background: #f2967f;
+}
+
+.fourth .mixed-with-secondary {
+  background: #b98772;
+}
+
+.fourth .mixed-with-tertiary {
+  background: #ff8240;
+}
+
+.fourth .mixed-with-fourth {
+  background: tomato;
+}
+
+.primary .label::after {
+  content: "Rose bonbon";
+}
+
+.secondary .label::after {
+  content: "green hh";
+}
+
+.tertiary .label::after {
+  content: "blue turquoise";
+}
+
+.fourth .label::after {
+  content: "yellow poussin";
+}
+/*# sourceMappingURL=style.css.map */

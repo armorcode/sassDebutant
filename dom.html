@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="maDiv" class="mesDiv">
+
+        Titi
+
+    </div>
+
+    <div class="mesDiv">
+
+        Toto
+    </div>
+
+
+    <input type="email" name="" id="email">
+    
+    <button id="btn">Valider</button>
+
+    <button id="btn" onmouseover='verifMail()'>Valider2</button>
+
+    <input type="file" name="" id="file">
+
+
+
+    <script>
+        // document.getElementById('maDiv').style = "Titi";
+        // document.getElementById("maDiv").style.fontWeight = '600';
+        // document.getElementById("maDiv").style.color = 'blue';
+
+        // console.log(document.querySelector("#maDiv"));
+        // console.log($('#maDiv'));
+
+        document.getElementById('email').addEventListener('keyup', verifMail);
+
+        function verifMail() {
+
+            // document.getElementById('maDiv').innerHTML=value;
+            document.getElementById("maDiv").innerHTML= document.getElementById("email").value;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
